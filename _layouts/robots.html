@@ -46,15 +46,15 @@ document.getElementById("robotList").innerHTML=robotListGenerator(robotList);
   <ul class="robot_list">
     {% for robot in page.robots %}
       <li class="robot span5">
-        {{ robot.name }}
+        <h1>{{ robot.name }}</h1>
         {% if robot.subclass %}
-          <p class="model_header">{{ robot.subclass }}:</p>
+          <p class="model_header"><h2>{{ robot.subclass }}:</h2></p>
           <ul class="model_list">
           {% for model in robot.child %}
             <li class="model_item">
-              {{ model.name }}
+              <h3>{{ model.name }}</h3>
               {% if model.subclass %}
-                <p class="version_header">{{ model.subclass }}:</p>
+                <p class="version_header"><h4>{{ model.subclass }}:</h4></p>
                 {% for version in model.child %}
                   <a href="{{ version.url }}">
                   {% if version.image %}

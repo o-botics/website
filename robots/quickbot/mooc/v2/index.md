@@ -4,7 +4,7 @@ name: v2
 priority: 2
 title: QuickBot MOOC v2
 modified: 2014-02-28
-publish: true
+publish: false
 ---
 
 <p align="center">

@@ -4,7 +4,7 @@ logo:             site-logo.png
 description:      A place where roboticists can collaborate on robot designs, code, electronics, and hardware.
 
 # Uncommment this line when pushing to live site and comment when testing locally
-url: http://o-botics.org
+# url: http://o-botics.org
 
 pages:        ./_pages
 robots:       ./robots

@@ -21,15 +21,8 @@ title: The Roboticists
         <a href="{{ version.url }}">
           {% if person.image %}
           <div style="width:image width px; font-size:80%; text-align:center;"><a href="{{ person.website }}"><img src="{{ person.url }}/{{ person.image }}" alt="{{ person.name }}" width="150" height="150" style="border:5px solid black" /><p>{{ person.name }}</p></a></div>
-            <!-- <div class="roboticists_image">
-            <img src="{{ person.url }}/{{ person.image }}" alt={{ person.name }}>
-            </div>
-            <div class="roboticists_name">
-            {{ person.name }}
-            </div> -->
           {% else %}
           <div style="width:image width px; font-size:80%; text-align:center;"><img src="/images/no_name.jpg" alt="{{ person.name }}" width="150" height="150" style="border:5px solid black" /><p>{{ person.name }}</p></div>
-<!--             <img src="/images/no_name.jpg" alt={{ person.name }} height="150" width="150" style="border:5px solid black"> -->
           {% endif %}
         </a>
         &nbsp&nbsp

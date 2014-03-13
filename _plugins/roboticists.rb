@@ -20,8 +20,8 @@ module Jekyll
         if config["publish"]
           roboticists[cnt] = config
           roboticists[cnt]["url"] = File.join(dir,File.basename(File.dirname(this_path)))
+          cnt = cnt + 1
         end
-        cnt = cnt + 1
       end
       return roboticists
     end
