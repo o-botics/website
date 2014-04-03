@@ -18,6 +18,7 @@ So, if you have any ideas on how to make it better in any way, don't hesitate to
 # Table Of Contents
 0. [Background](#background)
 0. [Getting The Repositories](#getting-the-repositories)
+0. [Install Jekyll](#install-jekyll)
 
 # Background
 
@@ -68,16 +69,23 @@ First, the GitHub Help page on forking is very useful, [Fork A Repo](https://hel
 ```
   * Make sure to replace _USERNAME_ with your GitHub username.
 0. Clone the _o-botics.github.io_ into the __site_ folder of the _website_ folder.
-  * Again, replace _USERNAME_ and do not forget __site_ at the end of the command.
-  ```
-  >> cd website
-  >> get clone https://github.com/USERNAME/o-botics.github.io.git _site
-  ```
+  * Again, replace _USERNAME_ and do not forget _website/_site_ at the end of the command.
+```
+>> get clone https://github.com/USERNAME/o-botics.github.io.git website/_site
+```
 
+# Install Jekyll
+0. Jekyll is built on Ruby, so before installing Jekyll Ruby must be installed.
+Follow these instructions for installing Ruby, if you do not already have it installed. [Installing Rudy](https://www.ruby-lang.org/en/installation/)
 
-
-
-
+0. Next install Jekyll with the following command:
+```
+>> gem install jekyll
+```
+0. Next install Kramdown is what is used to convert the markdown, so install that with the following command:
+```
+>> gem install kramdown
+```
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

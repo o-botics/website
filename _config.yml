@@ -66,14 +66,15 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  use_coderay: true
 
   coderay:
-    coderay_line_numbers:
+    coderay_line_numbers: inline
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
-    coderay_css: class
+    coderay_css: style
+    coderay_default_lang: bash
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
