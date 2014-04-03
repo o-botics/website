@@ -1,20 +1,21 @@
 ---
 <!-- Do not edit below -->
-layout: post
-category: news
+layout: robot
 <!-- Do not edit above -->
 
-title: Trouble Updating The Site
-description: "Things do not seem to be working when moving from local machine to remote machine."
-modified: 2014-03-05
-avatar: rowland_oflaherty/rowland_oflaherty.jpg
+name: <!-- Version name here -->
+title: <!-- Title here -->
+modified: <!-- Date here in the format YYYY-MM-DD -->
+image: <!-- Link to image here (path relative to this folder) -->
+prev_name: Robots
+prev_link: /robots/
+next_name: <!-- Next robot page name here -->
+next_link: <!-- Next robot page link (path relative to this folder) -->
+priority:
+publish: true
 ---
 
-I have spent a nontrivial amount of time trying to get the site up and running.
-Most of that time was spent making it easy to add new robots and roboticists and then have those additions get automatically displayed on the appropriate pages.
-This is working on my local machine but does not seem to want to work on GitHub for the world to see. This will take some debugging ;-)
-
-Do not worry the site will be up for all the world to see shortly.
+Content goes here...
 
 <!-- Do not edit below this line -->
 

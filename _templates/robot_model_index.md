@@ -4,7 +4,7 @@ layout: page
 subclass: Versions
 <!-- Do not edit above -->
 
-name: MOOC
-priority: 1
+name: <!-- Version name here -->
+priority:
 publish: true
 ---

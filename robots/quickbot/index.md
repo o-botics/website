@@ -1,7 +1,10 @@
 ---
+<!-- Do not edit below -->
 layout: page
-name: QuickBot
 subclass: Models
+<!-- Do not edit above -->
+
+name: QuickBot
 priority: 1
 publish: true
 ---

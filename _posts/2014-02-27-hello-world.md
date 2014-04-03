@@ -1,14 +1,21 @@
 ---
+<!-- Do not edit below -->
 layout: post
+category: news
+<!-- Do not edit above -->
+
 title: Hello World
 description: "Just saying hi from O'Botics!"
 modified: 2014-02-27
-category: news
 author: Rowland O'Flaherty
 avatar: rowland_oflaherty/rowland_oflaherty.jpg
 ---
 
-Hello World from O'Botics. The site is up. Not much on it right now but hopefully that will change quickly.
+Hello World from O'Botics.
+The site is up.
+Not much on it right now but hopefully that will change quickly.
+
+<!-- Do not edit below this line -->
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

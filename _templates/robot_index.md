@@ -1,10 +1,10 @@
 ---
 <!-- Do not edit below -->
 layout: page
-subclass: Versions
+subclass: Models
 <!-- Do not edit above -->
 
-name: MOOC
-priority: 1
+name: <!-- Robot name here -->
+priority:
 publish: true
 ---
