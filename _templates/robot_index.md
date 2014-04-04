@@ -1,10 +1,11 @@
 ---
-<!-- Do not edit below -->
+# <!-- Do not edit below -->
 layout: page
 subclass: Models
-<!-- Do not edit above -->
+# <!-- Do not edit above -->
+
+publish: true
+priority:
 
 name: <!-- Robot name here -->
-priority:
-publish: true
 ---

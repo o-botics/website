@@ -1,8 +1,8 @@
 ---
-<!-- Do not edit below -->
+# <!-- Do not edit below -->
 layout: post
 category: news
-<!-- Do not edit above -->
+# <!-- Do not edit above -->
 
 title: Trouble Updating The Site
 description: "Things do not seem to be working when moving from local machine to remote machine."

@@ -1,6 +1,8 @@
-name: Rowland O'Flaherty
 publish: true
 active: true
+priority: 1
+
+name: Rowland O'Flaherty
 role: O'Botics Founder
 bio: Georgia Tech Robotics PhD Candidate
 email: rowoflo@gmail.com
@@ -10,4 +12,4 @@ linkedin: rowoflo
 twitter: rowoflo
 image: rowland_oflaherty.jpg
 short:
-  "Is the founder of the O'Botics."
+  "Is the founder of the O'Botics website."

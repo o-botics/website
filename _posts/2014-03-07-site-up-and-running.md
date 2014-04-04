@@ -1,8 +1,8 @@
 ---
-<!-- Do not edit below -->
+# <!-- Do not edit below -->
 layout: post
 category: news
-<!-- Do not edit above -->
+# <!-- Do not edit above -->
 
 title: O'Botics Up and Running
 description: "After working out some issues, finally got the website up... still a lot of work to do."

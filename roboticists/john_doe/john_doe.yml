@@ -1,6 +1,8 @@
-name: John Doe
 publish: false
-active: true
+active: false
+priority:
+
+name: John Doe
 role: O'Botics Contributor
 bio: Faithful roboticist
 email: jon@doe.com

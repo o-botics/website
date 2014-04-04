@@ -1,7 +1,10 @@
 ---
-<!-- Do not edit below -->
+# <!-- Do not edit below -->
 layout: robot
-<!-- Do not edit above -->
+# <!-- Do not edit above -->
+
+publish: true
+priority:
 
 name: <!-- Version name here -->
 title: <!-- Title here -->
@@ -11,8 +14,6 @@ prev_name: Robots
 prev_link: /robots/
 next_name: <!-- Next robot page name here -->
 next_link: <!-- Next robot page link (path relative to this folder) -->
-priority:
-publish: true
 ---
 
 Content goes here...

@@ -1,10 +1,19 @@
 ---
-layout: page
-name: v2
+# <!-- Do not edit below -->
+layout: robot
+# <!-- Do not edit above -->
+
+publish: true
 priority: 2
+
+name: v2
 title: QuickBot MOOC v2
-modified: 2014-02-28
-publish: false
+modified: 2014-03-04
+image:
+prev_name: Robots
+prev_link: /robots/
+next_name:
+next_link:
 ---
 
 <p align="center">
@@ -16,6 +25,8 @@ publish: false
 
 ## Overview
 Second version of the MOOC QuickBot.
+
+<!-- Do not edit below this line -->
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

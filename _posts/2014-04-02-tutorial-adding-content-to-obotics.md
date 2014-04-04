@@ -1,25 +1,36 @@
 ---
+# <!-- Do not edit below -->
 layout: post
 category: news
+# <!-- Do not edit above -->
 
 title: Tutorial -- Adding Content to O'Botics
 description: "This post is a first attempt on explaining how to add content to this website, O'Botics"
-modified: 2014-04-03
+modified: 2014-04-04
 author: Rowland O'Flaherty
 avatar: rowland_oflaherty/rowland_oflaherty.jpg
 ---
 
 The ambition of this website is to be collaborative.
-For that to happen people besides myself need to be able to contribute to the site content.
-The goal of this tutorial is to explain how one would contribute to the site.
+For that to happen people besides myself need to be able to contribute to the content of the site.
+This tutorial explains how one would contribute content to this site.
 
-**I make no claim that the current setup, organization, methodology, etc. of this site is currently optimal.
-So, if you have any ideas on how to make it better in any way, don't hesitate to comment.**
+**I make no claim that the current setup, organization, methodology, etc. of this site is optimal.
+So, if you have any ideas on how to make it better in any way, do not hesitate to comment.**
+
+**Also, if you want a more detailed explanation of any of the topics below, do not hesitate to comment.**
 
 # Table Of Contents
 0. [Background](#background)
 0. [Getting The Repositories](#getting-the-repositories)
 0. [Installing Jekyll](#installing-jekyll)
+0. [Testing Jekyll Site](#testing-jekyll-site)
+0. [Adding Content](#adding-content)
+    * [Adding News](#adding-news)
+    * [Adding Robots](#adding-robots)
+    * [Adding Roboticists](#adding-roboticists)
+0. [Publishing New Content](#publishing-new-content)
+
 
 # Background
 
@@ -28,7 +39,7 @@ The site is hosted as a [GitHub Page](https://pages.github.com/) using [Jekyll](
 
 What does this mean?
 
-GitHub is a web-based hosting services for [Git](http://git-scm.com/) revision control systems and is where the Git repositories for source files for this site are stored.
+GitHub is a web-based hosting service for [Git](http://git-scm.com/) (a revision control system) repositories and is where the source files for this site are stored.
 
 The source files and the actual static web pages files are in the following repositories:
 
@@ -39,97 +50,83 @@ Some may wonder why two different repositories are being used?
 
 The source files can be stored directly in the *.github.io repository and GitHub can build the Jekyll files and deploy the resulting static pages.
 The problem is that GitHub will not build custom Jekyll plugins (see this [page](http://jekyllrb.com/docs/plugins/)), which O'Botics uses.
-Thus, the use of the two separate repositories.
-The site can be generated locally and pushed directly to the *.github.io repository.
+Thus, the use of the two separate repositories necessary.
+The site is generated locally and pushed directly to the *.github.io repository.
 
 Jekyll is used to create the static pages from HTML and [Markdown](http://en.wikipedia.org/wiki/Markdown) files.
-This allows to easily create new pages while maintain similar formatting and style.
-For example, to create this tutorial I had to:
+This allows to easily create new pages while maintain similar formatting and style of the rest of the website.
+For example, to create this tutorial page I had to:
 
-1. create a new markdown text file in the post directory (*.md)
-2. name it appropriately (YYYY-MM-DD-title.md)
-3. add a [YAML](http://en.wikipedia.org/wiki/YAML) header (contains the meta data about the page)
-4. add the markdown text content
+1. Create a new markdown text file (`*.md`) in the post directory of the website folder (`.../website/_posts`)
+2. Name it appropriately (`YYYY-MM-DD-title.md`)
+3. Add a [YAML](http://en.wikipedia.org/wiki/YAML) header (contains the meta data about the page)
+4. Add the content page using markdown syntax
+5. Build the page with Jykyll (`>> jekyll build`)
+6. Publish the page to GitHub (`>> git commit -a && git push`)
 
-I did not have to worry about any other HTML/CSS to give it the look that matches the rest of the website.
-It is a similar notion to LaTeX where the formatting is abstracted away from the content.
+I did not have to worry about any other HTML/CSS to give it the look and feel that matches the rest of the website.
+It is a similar notion to LaTeX, where the formatting is abstracted away from the content.
 
 Ok enough chitchat... how does someone else do this?
 
 # Getting The Repositories
 
-First, the GitHub Help page on forking is very useful, [Fork A Repo](https://help.github.com/articles/fork-a-repo).
-
-0. First create a GitHub account if you do not already have one here on the [GitHub Home Page](https://github.com/).
-0. Fork both the repositories (Hit the "Fork" button in the upper left of the screen):
-  * [o-botics/website repository](https://github.com/o-botics/website).
-  * [o-botics/o-botics.github.io repository](https://github.com/o-botics/o-botics.github.io).
+0. First create a GitHub account if you do not already have on the [GitHub Home Page](https://github.com/).
+0. Fork the repository (Hit the "Fork" button in the upper left of the screen): [o-botics/website repository](https://github.com/o-botics/website).
+  *  The GitHub Help page on "forking" is very useful, [Fork A Repo](https://help.github.com/articles/fork-a-repo).
 0. Clone the _website_ repository. To do this navigate to your favorite folder and execute the following command:
-`
->> git clone https://github.com/USERNAME/website.git
-`
+`>> git clone https://github.com/USERNAME/website.git`
   * Make sure to replace _USERNAME_ with your GitHub username.
-0. Clone the _o-botics.github.io_ repository into the __site_ folder of the _website_ folder.
-  * Again, replace _USERNAME_ and do not forget _website/_site_ at the end of the command.
-`
->> get clone https://github.com/USERNAME/o-botics.github.io.git website/_site
-`
 
 # Installing Jekyll
 0. Jekyll is built on Ruby, so before installing Jekyll Ruby must be installed.
-If you do not already have Ruby installed follow these instructions for installing Ruby for varies operating systems, [installing Rudy](https://www.ruby-lang.org/en/installation/).
+If you do not already have Ruby installed follow these instructions for installing Ruby on various operating systems, [installing Rudy](https://www.ruby-lang.org/en/installation/).
 
-0. Next install Jekyll with the following command:
-`
->> gem install jekyll
-`
-Note: Windows users this site will be helpful, [Running Jekyll On Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
-0. This site uses Kramdown to convert the markdown. Install Kramdown with the following command:
-`
->> gem install kramdown
-`
+0. Next install Jekyll with the following command: `>> gem install jekyll`
+  *  Windows users this site will be helpful, [Running Jekyll On Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
+0. This site uses Kramdown to convert the markdown to HTML. Install Kramdown with the following command: `>> gem install kramdown`
 
 # Testing Jekyll Site
-Ok, you should now have everything you need to start in order to add content to the site.
-To test the setup and for development of content, Jekyll comes with the tools to serve of the a local web page.
+You should now have everything you need to start adding content to the site.
+To test the setup and for development, Jekyll comes with a built-in development server that allows you to preview the site in your local browser.
 
-0. Navigate in to the folder in which you cloned the _website_ repository in to. Something like: `>> cd ~/.../website`
+0. Navigate to the folder in which you cloned the _website_ repository into, something like `>> cd ~/.../website`
 0. Open the `.../website/_config.yml` file with your favorite text editor.
-0. Comment out the url line (approx. line 7). Should look like this:
-`# url: http://o-botics.org`.
-This will set the default URL of the site to `http://localhost:4000`.
-0. Build the site with Jekyll. Run the following command in the _website_ folder: `>> jekyll build`
-0. Activate the Jekyll web server. Run the following command in the _website_ folder: `>> jekyll serve`
+0. Comment out the URL line (approx. line 7).
+  *  Should look like this: `# url: http://o-botics.org`.
+  This will set the default URL of the site to `http://localhost:4000`.
+0. Build the site with Jekyll. Run the following command in the _website_ folder to do this, `>> jekyll build`
+0. Activate the Jekyll web server. Run the following command in the _website_ folder to do this, `>> jekyll serve`
 0. Check out the site in your favorite browser by navigating to `http://localhost:4000`.
 
 Every time you change something you have to rebuild the site with the build command.
-This can get annoying, so you can run `>> jekyll serve --watch`, which will automatically build the site if any of the files are changed.
-Except for if the configuration file, `.../website/_config.yml` is changed.
+This can get annoying, so instead you can run `>> jekyll serve --watch` command, which will automatically build the site if any of the files change.
+Except for if the configuration file, `.../website/_config.yml`, changes.
 In that case you must use the build command, `jekyll build`.
 
 # Adding content
-To add content to the site you simply create new file of the appropriate type and save it into the appropriate folder, Jekyll takes care of the rest.
+To add content to the site you simply create a new file of the appropriate type and save it into the appropriate folder, Jekyll takes care of the rest.
 Using the current files as examples should be a very useful and a good way to start.
 
-### Posts (or News)
+### Adding News
 To create a new post, which gets added to the "News" tab of the site follow these steps.
 
-0. Copy the post template,`YYYY-MM-DD-post-title.md`, from the `.../website/_templates` folder to the `.../website/_posts` folder.
-0. Rename the file to current date and desired title, making sure of following the correct format. For example, post is named `2014-04-02-tutorial-adding-content-to-obotics.md`.
-The date will in the file name will be the creation date of the left side the site.
-0. Update meta data of the post.
-At the top of the file is some YAML content, which contains some all of the meta data for the post.
-Do not change the first two lines but edit the following appropriately (see the other posts for as examples).
-The "avatar" picture file is relative to the `.../website/roboticists` folder.
+0. Copy the post template file,`YYYY-MM-DD-post-title.md`, from the `.../website/_templates/` folder to the `.../website/_posts/` folder.
+0. Rename the file to current date and desired title, making sure to following the correct format. For example, `2014-02-27-hello-world.md` is a valid name.
+The date in the file name will be the creation date on the left side the website page.
+0. Update the meta data of the post.
+At the top of the file is some YAML content, which contains all of the meta data for the post.
+Do not change the first two lines, but edit the following lines appropriately (see the other posts for examples).
+  *  The avatar picture file is relative to the `.../website/roboticists/` folder.
 0. Add content below the YAML section of the file.
 Do not edit the bottom of the file.
 This section is the javascript that is used to display the [Disqus](http://disqus.com/) comments.
-0. If you are running `>> jekyll serve --watch`, after every time you save the file you should see the changes appear in your browser (probably have to hit the refresh button in the browser).
+0. If you are running `>> jekyll serve --watch`, after each time you save the file, you should see the changes appear in your browser (you probably have to hit the refresh button in your browser).
 
-### Robots
+### Adding Robots
 Adding a new robot is very similar to adding a new post.
-The major difference is that there is a deeper file structure organization that employed with the robots.
-The robot folder structure is organized as:
+The major difference is that there is a deeper folder structure organization that is employed.
+The robot folder structure is organized as follows:
 
 ~~~
 .../website/robots
@@ -147,31 +144,58 @@ The robot folder structure is organized as:
 
 ~~~
 
-
-As an example, the QuickBot robot MOOC model v1 version is setup with this structure.
-The idea is that as a robot evolves it can build off earlier versions and models.
+The idea behind this structure is that as a robot evolves it can build off earlier versions and models.
+As an example, take a look at the QuickBot robot MOOC model v1 version.
 
 To add a new robot follow these steps.
 
-0. Create a new robot folder in the `.../website/robots` folder.
-Example `>> mkdir robots/new_robot`
-0. Copy the robot template, `robot_index.md`, from the `.../website/_templates` folder to your new robot folder and rename to `index.md`.
-Example `>> cp _templates/robot_index.md robots/new_robot/index.md`.
-0. Edit YAML content at the top this new robot file (Do not change the first two lines of YAML content).
-0. Create a new model folder in the robot folder you just created.
-Example `>> mkdir robots/new_robot/new_model`
+0. Create a new robot folder in the `.../website/robots/` folder.
+  *  For example `>> mkdir robots/new_robot`
+0. Copy the robot template, `robot_index.md`, from the `.../website/_templates/` folder to your new robot folder and rename to `index.md`.
+  *  For example `>> cp _templates/robot_index.md robots/new_robot/index.md`
+0. Edit YAML content at the top this new robot file.
+  *  Do not change the first two lines of the YAML content.
+0. Create a new model folder in the robot folder that you just created.
+  *  For example `>> mkdir robots/new_robot/new_model`
 0. Copy the model template, `robot_model_index.md`, from the `.../website/_templates` folder to your new model folder and rename to `index.md`.
-Example `>> cp _templates/robot_model_index.md robots/new_robot/new_model`
+  *  For example `>> cp _templates/robot_model_index.md robots/new_robot/new_model`
 0. Edit YAML content at the top this new model file.
-Again, do not change the first two lines of YAML content.
-0. Create a new version folder in the model folder you just created.
-Example `>> mkdir robots/new_robot/new_model/new_version`
+  *  Do not change the first two lines of the YAML content.
+0. Create a new version folder in the model folder that you just created.
+  *  For example `>> mkdir robots/new_robot/new_model/new_version`
 0. Copy the version template, `robot_model_version_index.md`, from the `.../website/_templates` folder to your new version folder and rename to `index.md`.
 0. Edit YAML content at the top this new version file.
-Again, do not change the first two lines of YAML content.
+  *  Do not change the first two lines of the YAML content.
+0. Add the content about the robot to the version file in the content area.
+0. Add additional files about the version of the robot by creating new version files and linking to them with the links in the YAML section at the top of the file.
+  *  These additional files obviously can not be named `index.md` and must be named something else.
 
-### Roboticists
+### Adding Roboticists
+Adding a new roboticist is very similar to adding a new post.
+All the files associated with a roboticist must be placed in an individual folder under the `.../website/roboticists/`.
 
+To add a new roboticists follow these steps.
+
+0. Create a new roboticist folder in the `.../website/roboticists/` folder and name it using your first and last name, like `first_last`.
+0. Copy the roboticist template, `roboticist.yaml`, from the `.../website/_templates/` folder to your new roboticist folder and rename to your first and last name (same name as the folder) with the 'yml' extension, like `first_last.yml`.
+0. Add an avatar image to this new folder.
+
+# Publishing New Content
+Once you have added all your new content and checked that everything is perfect by previewing the site in your local browser then you are ready to publish to the world.
+
+Follow these steps to publish.
+
+0. Uncomment the url line (approx. line 7) in `.../website/_config.yml`.
+  *  Should look like this: `url: http://o-botics.org`.
+0. Build the site one last time with `>> jekyll build`.
+0. Commit your changes to the the website Git repository with `>> git commit -am "Your commit message here."`
+0. Push your changes with `>> git push`.
+0. Submit a pull request from your GitHub account.
+  *  Use the GitHub Help page on "pull request" to learn how to do this, [Using Pull Request](https://help.github.com/articles/using-pull-requests).
+
+One of the moderators of the O'Botics will review your pull request and (most likely) accept it. Then it will be available for the entire world to see!
+
+At the time of writing this tutorial I am the only moderator, but if you would like to be a moderator (anybody is welcome) please send me a message.
 
 <!-- Do not edit below this line -->
 

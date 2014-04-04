@@ -1,10 +1,12 @@
 ---
-<!-- Do not edit below -->
+# <!-- Do not edit below -->
 layout: robot
-<!-- Do not edit above -->
+# <!-- Do not edit above -->
+
+publish: true
+priority: 1
 
 name: v1
-priority: 1
 title: QuickBot MOOC v1
 modified: 2014-03-04
 image: quickbot-mooc-v1.jpg
@@ -12,7 +14,6 @@ prev_name: Robots
 prev_link: /robots/
 next_name: Parts Lists
 next_link: parts_list.html
-publish: true
 ---
 
 The QuickBot was originally designed by <a href="https://rowlandoflaherty.com" target="_blank">Rowland O'Flaherty</a> for the <a href="https://www.coursera.org/course/conrob" target="_blank">2014 Coursera MOOC "Control of Mobile Robots"</a>. The idea was to have a fairly cheap, easy to build, differential drive robot that the students of the course could use to apply the theory that they learn from the course to a real world robot. The name QuickBot was given because (in theory) it is quick to build and set up.

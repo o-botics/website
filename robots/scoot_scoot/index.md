@@ -1,6 +1,11 @@
 ---
+# <!-- Do not edit below -->
 layout: page
-name: Scoot Scoot
-priority: 2
+subclass: Models
+# <!-- Do not edit above -->
+
 publish: false
+priority: 2
+
+name: Scoot Scoot
 ---
