@@ -8,7 +8,7 @@ title: Hello World
 description: "Just saying hi from O'Botics!"
 modified: 2014-02-27
 author: Rowland O'Flaherty
-avatar: rowland_oflaherty/rowland_oflaherty.jpg
+avatar: oflaherty_rowland/professional.jpg
 ---
 
 Hello World from O'Botics.

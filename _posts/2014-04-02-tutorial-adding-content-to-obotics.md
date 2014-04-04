@@ -8,7 +8,7 @@ title: Tutorial -- Adding Content to O'Botics
 description: "This post is a first attempt on explaining how to add content to this website, O'Botics"
 modified: 2014-04-04
 author: Rowland O'Flaherty
-avatar: rowland_oflaherty/rowland_oflaherty.jpg
+avatar: oflaherty_rowland/professional.jpg
 ---
 
 The ambition of this website is to be collaborative.
@@ -176,8 +176,8 @@ All the files associated with a roboticist must be placed in an individual folde
 
 To add a new roboticists follow these steps.
 
-0. Create a new roboticist folder in the `.../website/roboticists/` folder and name it using your first and last name, like `first_last`.
-0. Copy the roboticist template, `roboticist.yaml`, from the `.../website/_templates/` folder to your new roboticist folder and rename to your first and last name (same name as the folder) with the 'yml' extension, like `first_last.yml`.
+0. Create a new roboticist folder in the `.../website/roboticists/` folder and name it using your last and first name, like `last_first`.
+0. Copy the roboticist template, `roboticist.yaml`, from the `.../website/_templates/` folder to your new roboticist folder and rename to your last_first name (same name as the folder) with the 'yml' extension, like `last_first.yml`.
 0. Add an avatar image to this new folder.
 
 # Publishing New Content

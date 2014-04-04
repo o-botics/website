@@ -7,7 +7,8 @@ category: news
 title: Trouble Updating The Site
 description: "Things do not seem to be working when moving from local machine to remote machine."
 modified: 2014-03-05
-avatar: rowland_oflaherty/rowland_oflaherty.jpg
+author: Rowland O'Flaherty
+avatar: oflaherty_rowland/professional.jpg
 ---
 
 I have spent a nontrivial amount of time trying to get the site up and running.

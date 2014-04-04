@@ -8,7 +8,7 @@ title: O'Botics Up and Running
 description: "After working out some issues, finally got the website up... still a lot of work to do."
 modified: 2014-03-07
 author: Rowland O'Flaherty
-avatar: rowland_oflaherty/rowland_oflaherty.jpg
+avatar: oflaherty_rowland/professional.jpg
 ---
 
 Ok, after a lot of Googling and tweaking I finally got the website up and running with comments and everything else working.
