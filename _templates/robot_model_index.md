@@ -1,11 +1,11 @@
 ---
 # <!-- Do not edit below -->
 layout: page
-subclass: Models
+subclass: Versions
 # <!-- Do not edit above -->
 
 publish: true
-priority: 1
+priority:
 
-name: QuickBot
+name: <!-- Version name here -->
 ---

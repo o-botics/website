@@ -3,28 +3,20 @@
 layout: robot
 # <!-- Do not edit above -->
 
-publish: false
-priority: 2
+publish: true
+priority:
 
-name: v2
-title: QuickBot MOOC v2
-modified: 2014-03-04
-image:
+name: <!-- Version name here -->
+title: <!-- Title here -->
+modified: <!-- Date here in the format YYYY-MM-DD -->
+image: <!-- Link to image here (path relative to this folder) -->
 prev_name: Robots
 prev_link: /robots/
-next_name:
-next_link:
+next_name: <!-- Next robot page name here -->
+next_link: <!-- Next robot page link (path relative to this folder) -->
 ---
 
-<p align="center">
-  <img src="{{ page.url }}/images/quickbot-red-icon.jpg" alt="QuickBot">
-</p>
-
-* Table of Contents
-{:toc}
-
-## Overview
-Second version of the MOOC QuickBot.
+Content goes here...
 
 <!-- Do not edit below this line -->
 
@@ -44,5 +36,3 @@ Second version of the MOOC QuickBot.
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-

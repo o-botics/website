@@ -5,7 +5,7 @@ subclass: Models
 # <!-- Do not edit above -->
 
 publish: true
-priority: 1
+priority:
 
-name: QuickBot
+name: <!-- Robot name here -->
 ---

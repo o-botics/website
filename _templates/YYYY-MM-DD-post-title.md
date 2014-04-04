@@ -1,14 +1,19 @@
 ---
+<!-- Do not edit below -->
 layout: post
-title:
-description: ""
-modified: YYYY-MM-DD
 category: news
-author:
-avatar:
+<!-- Do not edit above -->
+
+title: <!-- Title here -->
+description: <!-- Description here with " " wrapped around the text -->
+modified: <!-- Date here in the format YYYY-MM-DD -->
+author: <!-- Author name here -->
+avatar: <!-- Link to author avator image here (path relative to .../website/roboticists) -->
 ---
 
-Blah blah
+Content goes here...
+
+<!-- Do not edit below this line -->
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

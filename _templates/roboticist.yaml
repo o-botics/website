@@ -1,0 +1,15 @@
+publish: true
+active: true
+priority:
+
+name: <!-- Roboticist name here -->
+role: <!-- Robticist role here -->
+bio: <!-- Roboticist bio here -->
+email: <!-- Roboticist email here -->
+website: <!-- Roboticist website here -->
+github: <!-- Roboticist GitHub username here -->
+linkedin: <!-- Roboticist LinkIn username here -->
+twitter: <!-- Roboticist Twitter username here -->
+image: <!-- Link to roboticist image here (path relative to this folder) -->
+short:
+  <!-- Short description of roboticist here with " " wrapped around the text -->

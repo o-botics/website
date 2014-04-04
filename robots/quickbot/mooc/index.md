@@ -1,7 +1,11 @@
 ---
+# <!-- Do not edit below -->
 layout: page
-name: MOOC
 subclass: Versions
-priority: 1
+# <!-- Do not edit above -->
+
 publish: true
+priority: 1
+
+name: MOOC
 ---
