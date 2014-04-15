@@ -13,10 +13,9 @@ avatar: oflaherty_rowland/professional.jpg
 
 The ambition of this website is to be collaborative.
 For that to happen people besides myself need to be able to contribute to the content of the site.
-This tutorial explains how one would contribute content to this site.
+This tutorial explains how to contribute content to this site.
 
-**I make no claim that the current setup, organization, methodology, etc. of this site is optimal.
-So, if you have any ideas on how to make it better in any way, do not hesitate to comment.**
+**Any ideas or comments to improve the setup and organization of this site is welcome.**
 
 **Also, if you want a more detailed explanation of any of the topics below, do not hesitate to comment.**
 
@@ -34,7 +33,7 @@ So, if you have any ideas on how to make it better in any way, do not hesitate t
 
 # Background
 
-Before I can explain the steps to make contributions to the site let me first describe how the site is hosted and configured.
+Let me first describe how the site is hosted and configured.
 The site is hosted as a [GitHub Page](https://pages.github.com/) using [Jekyll](http://jekyllrb.com/) to build the static web pages.
 
 What does this mean?
@@ -49,29 +48,28 @@ The source files and the actual static web pages files are in the following repo
 Some may wonder why two different repositories are being used?
 
 The source files can be stored directly in the *.github.io repository and GitHub can build the Jekyll files and deploy the resulting static pages.
-The problem is that GitHub will not build custom Jekyll plugins (see this [page](http://jekyllrb.com/docs/plugins/)), which O'Botics uses.
-Thus, the use of the two separate repositories necessary.
+The problem is that [GitHub will not build custom Jekyll plugins](http://jekyllrb.com/docs/plugins/), which O'Botics uses.
+Thus, the use of the two separate repositories is necessary.
 The site is generated locally and pushed directly to the *.github.io repository.
 
 Jekyll is used to create the static pages from HTML and [Markdown](http://en.wikipedia.org/wiki/Markdown) files.
-This allows to easily create new pages while maintain similar formatting and style of the rest of the website.
 For example, to create this tutorial page I had to:
 
 1. Create a new markdown text file (`*.md`) in the post directory of the website folder (`.../website/_posts`)
 2. Name it appropriately (`YYYY-MM-DD-title.md`)
-3. Add a [YAML](http://en.wikipedia.org/wiki/YAML) header (contains the meta data about the page)
+3. Add a [YAML](http://en.wikipedia.org/wiki/YAML) header (contains the metadata about the page)
 4. Add the content page using markdown syntax
-5. Build the page with Jykyll (`>> jekyll build`)
+5. Build the page with Jekyll (`>> jekyll build`)
 6. Publish the page to GitHub (`>> git commit -a && git push`)
 
-I did not have to worry about any other HTML/CSS to give it the look and feel that matches the rest of the website.
-It is a similar notion to LaTeX, where the formatting is abstracted away from the content.
+I did not have to worry about any other HTML/CSS to give it the look and feel of the website.
+It is similar to LaTeX, where the formatting is abstracted away from the content.
 
 Ok enough chitchat... how does someone else do this?
 
 # Getting The Repositories
 
-0. First create a GitHub account if you do not already have on the [GitHub Home Page](https://github.com/).
+0. First [create a GitHub account](https://github.com).
 0. Fork the repository (Hit the "Fork" button in the upper left of the screen): [o-botics/website repository](https://github.com/o-botics/website).
   *  The GitHub Help page on "forking" is very useful, [Fork A Repo](https://help.github.com/articles/fork-a-repo).
 0. Clone the _website_ repository. To do this navigate to your favorite folder and execute the following command:
@@ -79,8 +77,7 @@ Ok enough chitchat... how does someone else do this?
   * Make sure to replace _USERNAME_ with your GitHub username.
 
 # Installing Jekyll
-0. Jekyll is built on Ruby, so before installing Jekyll Ruby must be installed.
-If you do not already have Ruby installed follow these instructions for installing Ruby on various operating systems, [installing Rudy](https://www.ruby-lang.org/en/installation/).
+0. [Install Ruby](https://www.ruby-lang.org/en/installation/).
 
 0. Next install Jekyll with the following command: `>> gem install jekyll`
   *  Windows users this site will be helpful, [Running Jekyll On Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
@@ -88,7 +85,7 @@ If you do not already have Ruby installed follow these instructions for installi
 
 # Testing Jekyll Site
 You should now have everything you need to start adding content to the site.
-To test the setup and for development, Jekyll comes with a built-in development server that allows you to preview the site in your local browser.
+To test the setup and for development, Jekyll comes with a built-in development server that allows you to preview the site locally.
 
 0. Navigate to the folder in which you cloned the _website_ repository into, something like `>> cd ~/.../website`
 0. Open the `.../website/_config.yml` file with your favorite text editor.
@@ -105,8 +102,8 @@ Except for if the configuration file, `.../website/_config.yml`, changes.
 In that case you must use the build command, `jekyll build`.
 
 # Adding content
-To add content to the site you simply create a new file of the appropriate type and save it into the appropriate folder, Jekyll takes care of the rest.
-Using the current files as examples should be a very useful and a good way to start.
+To add content to the site simply create a new file of the appropriate type and save it into the appropriate folder, Jekyll takes care of the rest.
+Using the current files as examples is a good way to start.
 
 ### Adding News
 To create a new post, which gets added to the "News" tab of the site follow these steps.
@@ -114,14 +111,14 @@ To create a new post, which gets added to the "News" tab of the site follow thes
 0. Copy the post template file,`YYYY-MM-DD-post-title.md`, from the `.../website/_templates/` folder to the `.../website/_posts/` folder.
 0. Rename the file to current date and desired title, making sure to following the correct format. For example, `2014-02-27-hello-world.md` is a valid name.
 The date in the file name will be the creation date on the left side the website page.
-0. Update the meta data of the post.
-At the top of the file is some YAML content, which contains all of the meta data for the post.
+0. Update the metadata of the post.
+At the top of the file is some YAML content, which contains all of the metadata for the post.
 Do not change the first two lines, but edit the following lines appropriately (see the other posts for examples).
   *  The avatar picture file is relative to the `.../website/roboticists/` folder.
 0. Add content below the YAML section of the file.
 Do not edit the bottom of the file.
 This section is the javascript that is used to display the [Disqus](http://disqus.com/) comments.
-0. If you are running `>> jekyll serve --watch`, after each time you save the file, you should see the changes appear in your browser (you probably have to hit the refresh button in your browser).
+0. If you are running `>> jekyll serve --watch`, after each time you save the file, you should see the changes appear in your browser after hitting refresh.
 
 ### Adding Robots
 Adding a new robot is very similar to adding a new post.
@@ -140,7 +137,7 @@ The robot folder structure is organized as follows:
                          -> Version
                               |
                               -> index.md
-                              ->other files
+                              -> other files
 
 ~~~
 
@@ -191,7 +188,7 @@ Follow these steps to publish.
 0. Commit your changes to the the website Git repository with `>> git commit -am "Your commit message here."`
 0. Push your changes with `>> git push`.
 0. Submit a pull request from your GitHub account.
-  *  Use the GitHub Help page on "pull request" to learn how to do this, [Using Pull Request](https://help.github.com/articles/using-pull-requests).
+  *  Use the [GitHub Help page on "pull request"](https://help.github.com/articles/using-pull-requests) to learn how to do this.
 
 One of the moderators of the O'Botics will review your pull request and (most likely) accept it. Then it will be available for the entire world to see!
 
