@@ -6,7 +6,7 @@ category: news
 
 title: Tutorial -- Adding Content to O'Botics
 description: "This post is a first attempt on explaining how to add content to this website, O'Botics"
-modified: 2014-04-04
+modified: 2014-04-17
 author: Rowland O'Flaherty
 avatar: oflaherty_rowland/professional.jpg
 ---
@@ -15,7 +15,7 @@ The ambition of this website is to be collaborative.
 For that to happen people besides myself need to be able to contribute to the content of the site.
 This tutorial explains how to contribute content to this site.
 
-**Any ideas or comments to improve the setup and organization of this site is welcome.**
+**Any ideas or comments to improve the setup and organization of this site are welcome.**
 
 **Also, if you want a more detailed explanation of any of the topics below, do not hesitate to comment.**
 
@@ -49,10 +49,11 @@ Some may wonder why two different repositories are being used?
 
 The source files can be stored directly in the *.github.io repository and GitHub can build the Jekyll files and deploy the resulting static pages.
 The problem is that [GitHub will not build custom Jekyll plugins](http://jekyllrb.com/docs/plugins/), which O'Botics uses.
-Thus, the use of the two separate repositories is necessary.
+Thus, the use of the two separate repositories are necessary.
 The site is generated locally and pushed directly to the *.github.io repository.
 
 Jekyll is used to create the static pages from HTML and [Markdown](http://en.wikipedia.org/wiki/Markdown) files.
+This allows to easily create new pages while maintain the similar formatting and style from the rest of the website.
 For example, to create this tutorial page I had to:
 
 1. Create a new markdown text file (`*.md`) in the post directory of the website folder (`.../website/_posts`)
