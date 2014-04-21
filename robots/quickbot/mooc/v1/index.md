@@ -9,7 +9,7 @@ priority: 1
 name: v1
 title: QuickBot MOOC v1
 modified: 2014-03-04
-image: quickbot-mooc-v1.jpg
+image: quickbot_mooc_v1.jpg
 prev_name: Robots
 prev_link: /robots/
 next_name: Parts Lists

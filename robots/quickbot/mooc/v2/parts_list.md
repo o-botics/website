@@ -1,9 +1,9 @@
 ---
 layout: parts_list
-title: QuickBot MOOC v1 -- Parts List
-modified: 2014-03-13
-image: quickbot_mooc_v1.jpg
-prev_name: QuickBot MOOC v1
+title: QuickBot MOOC v2 -- Parts List
+modified: 2014-04-20
+image:
+prev_name: QuickBot MOOC v2
 prev_link: index.html
 next_name: Building
 next_link: building.html
@@ -11,11 +11,11 @@ publish: true
 ---
 <p align="center">
 <big><b>Downloads</b></big><br>
-Excel Spreadsheet: <u><a href="quickbot_mooc_v1_parts.xlsx">quickbot_mooc_v1_parts.xlsx</a></u><br>
-PDF: <u><a href="quickbot_mooc_v1_parts.pdf">quickbot_mooc_v1_parts.pdf</a></u>
+Excel Spreadsheet: <u><a href="quickbot_parts_v2.xlsx">quickbot_parts_v2.xlsx</a></u><br>
+PDF: <u><a href="quickbot_parts_v2.pdf">quickbot_parts_v2.pdf</a></u>
 </p>
 <p align="center">
-<iframe src="quickbot_mooc_v1_parts.htm" width="1280" height="1850"></iframe>
+<iframe src="quickbot_mooc_v2_parts.htm" width="1280" height="1850"></iframe>
 </p>
 
 <div class="entry-wrapper">

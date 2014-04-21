@@ -3,28 +3,24 @@
 layout: robot
 # <!-- Do not edit above -->
 
-publish: false
+publish: true
 priority: 2
 
 name: v2
 title: QuickBot MOOC v2
-modified: 2014-03-04
-image:
+modified: 2014-04-20
+image: quickbot_mooc_v2.jpg
 prev_name: Robots
 prev_link: /robots/
-next_name:
-next_link:
+next_name: Parts List
+next_link: parts_list.html
 ---
-
-<p align="center">
-  <img src="{{ page.url }}/images/quickbot-red-icon.jpg" alt="QuickBot">
-</p>
 
 * Table of Contents
 {:toc}
 
 ## Overview
-Second version of the MOOC QuickBot.
+The second version of the MOOC QuickBot. In this version ...
 
 <!-- Do not edit below this line -->
 
