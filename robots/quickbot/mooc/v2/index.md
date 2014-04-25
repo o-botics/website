@@ -16,11 +16,24 @@ next_name: Parts List
 next_link: parts_list.html
 ---
 
-* Table of Contents
-{:toc}
-
 ## Overview
-The second version of the MOOC QuickBot. In this version ...
+The second version of the MOOC QuickBot.
+This version has made seversal modification from the previous version, which include...
+
+* replacing the AA batteries with LiPo batteries.
+* adding a battery indicator board.
+* replacing the linear voltage regulator with two switch voltage regulators.
+* replacing the non-quadature encoders with reliable quadature encoders.
+
+## Disclaimer
+There is a good chance that there are mistakes in this write-up, which may cause serious damage to the BeagleBone Black or any other hardware.
+If you find any mistakes please comment or correct them and submit a pull request!
+
+## Pages
+0. [Parts List](parts_list.html)
+0. [Building](building.html)
+0. [Programming](programming.html)
+0. [Running](running.html)
 
 <!-- Do not edit below this line -->
 
