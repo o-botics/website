@@ -4,14 +4,16 @@ layout: post
 category: news
 # <!-- Do not edit above -->
 
-title: <!-- Title here -->
-description: <!-- Description here with " " wrapped around the text -->
-modified: <!-- Date here in the format YYYY-MM-DD -->
-author: <!-- Author name here -->
-avatar: <!-- Link to author avator image here (path relative to .../website/roboticists) -->
+title: Added QuickBot MOOC v2 Robot
+description: "New robot version added to robot section of the website"
+modified: 2014-04-25
+author: Rowland O'Flaherty
+avatar: oflaherty_rowland/professional.jpg
 ---
 
-Content goes here...
+I have updated the QuickBot to version 2.
+
+Check it out here [QuickBot MOOC v2](/robots/quickbot/mooc/v2/index.html)
 
 <!-- Do not edit below this line -->
 
