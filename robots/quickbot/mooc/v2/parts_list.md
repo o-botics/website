@@ -17,7 +17,7 @@ publish: true
 ---
 
 <div class="entry-content">
-Below is the parts list for this model of the QuickBot.
+Below are the parts for this model of the QuickBot.
 Keep in mind that you may already have some of these parts or tools, or may be able to accomplished building the QuickBot with different parts and tools.
 I suggest you read through the building steps before purchasing any parts or tools, so you know exactly the ones you will need to build the robot at the lowest cost as possible.
 </div>
