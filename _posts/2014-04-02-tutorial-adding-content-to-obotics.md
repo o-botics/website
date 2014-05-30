@@ -6,7 +6,7 @@ category: news
 
 title: Tutorial -- Adding Content to O'Botics
 description: "This post is a first attempt on explaining how to add content to this website, O'Botics"
-modified: 2014-04-17
+modified: 2014-05-30
 author: Rowland O'Flaherty
 avatar: oflaherty_rowland/professional.jpg
 ---
@@ -183,9 +183,6 @@ Once you have added all your new content and checked that everything is perfect 
 
 Follow these steps to publish.
 
-0. Uncomment the url line (approx. line 7) in `.../website/_config.yml`.
-  *  Should look like this: `url: http://o-botics.org`.
-0. Build the site one last time with `>> jekyll build`.
 0. Commit your changes to the the website Git repository with `>> git commit -am "Your commit message here."`
 0. Push your changes with `>> git push`.
 0. Submit a pull request from your GitHub account.
