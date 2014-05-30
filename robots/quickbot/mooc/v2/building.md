@@ -1060,7 +1060,7 @@ The green circles in the image below mark the locations of the zip ties.
     * White wire = LLC pin 5 <-> BBB pin P9_24.
 0. Connect BBB-IR wiring assembly to the 10K resistors and to the BBB.
     * Yellow wire = left IR <-> BBB pin P9_40.
-    * Green wire = left front IR <-> BBB pin P9_48.
+    * Green wire = left front IR <-> BBB pin P9_38.
     * Blue wire = front IR <-> BBB pin P9_36.
     * White wire = right front <-> BBB pin P9_35.
     * Red wire = right <-> BBB pin P9_33.
