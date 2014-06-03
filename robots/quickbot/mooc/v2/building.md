@@ -11,8 +11,8 @@ modified:  2014-04-25
 image:
 prev_name: Parts Lists
 prev_link: parts_list.html
-next_name: Programming
-next_link: programming.html
+next_name: Configuring
+next_link: configuring.html
 ---
 
 * Table of Contents
