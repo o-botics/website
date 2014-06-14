@@ -84,6 +84,12 @@ Ok enough chitchat... how does someone else do this?
   *  Windows users this site will be helpful, [Running Jekyll On Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html).
 0. This site uses Kramdown to convert the markdown to HTML. Install Kramdown with the following command: `>> gem install kramdown`
 
+or installl with bundle locally:
+
+0. Ubuntu we need `$ sudo apt-get install ruby-dev`
+0. Install bundle `$ sudo gem install bundle`
+0. Now we can run bundle `$ bundle`
+
 # Testing Jekyll Site
 You should now have everything you need to start adding content to the site.
 To test the setup and for development, Jekyll comes with a built-in development server that allows you to preview the site locally.

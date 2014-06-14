@@ -1,0 +1,13 @@
+publish: true
+active: true
+priority: 1
+
+name: Josip Delic
+role: O'Botics Contributor
+bio: Dipl. Ing. Angewandte Informatik (FH)
+email: delicj@delijati.net
+website: http://www.delijati.net/
+github: delijati
+image: professional.png
+short:
+  "Is a contributer to the O'Botics website."
