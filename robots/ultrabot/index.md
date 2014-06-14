@@ -21,12 +21,13 @@ fairly cheap, easy to build, differential drive robot. The name UltraBot was
 given because of the usage of Ultrasonic sensors.
 
 The UltraBot has a wheel encoder on each wheel to measure wheel rotations and
-five ultrasonic (ULTRA) distance sensors (proximity sensor) to measure the distance
-of obstacles to the robot. The processing on the QuickBot is preformed by a
-[BeagleBone Black (BBB)](http://beagleboard.org/products/beaglebone%20black)
-microcomputer. Wifi on board is used to connect the UltraBot to the world,
-which allows for onboard development as well as easy interfacing with
-simulation and visualization tools. The UltraBot is powered by 8 AA batteries.
+five ultrasonic (ULTRA) distance sensors (proximity sensor) to measure the
+distance of obstacles to the robot. The processing on the QuickBot is preformed
+by a [BeagleBone Black
+(BBB)](http://beagleboard.org/products/beaglebone%20black) microcomputer. Wifi
+on board is used to connect the UltraBot to the world, which allows for onboard
+development as well as easy interfacing with simulation and visualization
+tools. The UltraBot is powered by 8 AA batteries.
 
 Major difference with the Quickbot:
 
@@ -34,6 +35,12 @@ Major difference with the Quickbot:
 0. Easier to read out wheel encoders
 0. LM2596 insteed of LM7805 (no need for heatsink)
 0. Different chassis 
+
+Links to repos:
+
+0. Test robot hardware [link](https://github.com/delijati/ultrabot)
+0. Robot [link](https://github.com/o-botics/quickbot_bbb) or [link (latest)](https://github.com/delijati/quickbot_bbb)
+0. Simulator [link](https://github.com/delijati/pysimiam-simulator)
 
 <!-- Do not edit below this line -->
 
