@@ -134,8 +134,8 @@ To do this edit the `~/.gitconfig` file with the following:
     >> nano ~/.gitconfig
 
     [user]
-        name = Rowland O'Flaherty
-        email = rowoflo@gmail.com
+        name = YOUR FULL NAME HERE
+        email = YOUR EMAIL ADDRESS HERE
     [http]
         sslVerify = false
     [push]
@@ -171,6 +171,8 @@ Download Git auto-completion script with your local machine and move to BBB.
 0. Open new terminal window
 0. Run this command:
   * `>> wget "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" git-completion.bash`
+  * If you don't have `wget` on your computer you can install with Homebrew, MacPorts, or from source following these instructions "[Install wget in Mac OS X Without Homebrew or MacPorts](http://osxdaily.com/2012/05/22/install-wget-mac-os-x/)"
+  * If you get an error you with the `wget` command may need to use the `--no-check-certificate` option.
 0. Copy this file to the BBB home directory with this command:
   * `>> scp git-completion.bash root@192.168.7.2:/home/root/`
 0. Remove file from local machine
@@ -216,7 +218,8 @@ Get the code with:
 There is a script that needs to run each time the BBB boots up to set up the serial devices.
 You can run this script manually with
 
-    >> ~/quickbot_bbb/serial/setup.sh
+    >> cd ~/quickbot_bbb/serial
+    >> ./setup.sh
 
 But it is nice if this happens automatically on boot up.
 Create a service file and add the following:
