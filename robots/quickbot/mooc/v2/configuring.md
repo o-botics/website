@@ -58,6 +58,8 @@ Then test to see that it worked with just `>> date`.
 
 # 3. Configure the Wifi
 
+To make sure the BBB gets enough power and that the clock does not get reset it needs to be powered by the 5V DC power supply for the following steps.
+
 Plug in your Wifi adapter and restart your BBB with this command:
 
     >> reboot
