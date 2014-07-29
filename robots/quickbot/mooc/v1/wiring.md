@@ -63,6 +63,8 @@ The next is to wire up the QuickBot (diagram show here). The basic steps are:
 0. Install batteries and connect DC plugs.
 If you would like to run your QuickBot from wall power instead of batteries you can use a 9V-12V 1A DC power supply. Connect this power supply into one of the female DC plugs on the robot. You will need to short the other DC plug. An easy way to do attach both wires or poles of a male DC power plug and insert that into the other female connector on the robot. **Caution: You must remove all the batteries before connecting these plugs to run the QuickBot off of wall power.**
 
+![BBB Wiring Schematic](wiring_schematic.png "BBB Wiring Schematic")
+
 **Learn from my mistakes!** The BeagleBone Black is fairly sensitive beast. I have killed too many boards with wiring mistakes and having the BBB powered while moving it around, which allowed objects to come in contact with the underside of the board and thus shorting it out. Anything but 5V to the power pins or 3.3V to the GPIO pins will must likely kill this fancy little microcomputer.
 
 <div id="disqus_thread"></div>
